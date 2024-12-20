@@ -1,0 +1,98 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{geometry}
+\usepackage{tikz} % For precise placement
+\geometry{margin=1in}
+\usepackage{hyperref}
+\usepackage{float}  % Add this in the preamble
+\usepackage{wrapfig}
+
+\title{
+    \vspace{-5cm} % Raise the entire title block higher up
+    \hspace{-15cm} % Move the logo left
+    \raisebox{-4.5cm}{\includegraphics[width=3cm]{logo.png}} \\[1em] % Move the logo down
+    \textbf{[Document Title]}\\
+    \large [Subtitle or Description]
+}
+\author{
+    [Author Name 1] \and 
+    [Author Name 2] \and 
+    [Author Name 3] 
+}
+\date{}
+
+\onehalfspacing
+
+\begin{document}
+
+% Title
+\maketitle
+
+% Adjust spacing after the title
+\vspace{-1cm} % Reduce spacing after \maketitle
+
+% Table of Contents
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+\subsection{Background}
+[Provide background information about the topic here. Replace this text with a summary relevant to your context.]
+
+\subsection{Objective}
+[State the objective or purpose of this document.]
+
+\section{Analysis}
+
+\subsection{Subsection Example 1}
+[Introduce and discuss content related to your analysis. Use subsections to organize the content. Include figures and tables as needed.]
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{example1.pdf} % Placeholder for a figure
+    \caption{Example Figure Caption}
+    \label{fig:example1}
+\end{figure}
+
+\subsection{Subsection Example 2}
+[Provide additional analysis or content here. Ensure content flows logically and uses supporting references.]
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{example2.pdf}
+        \caption{Example Figure 1}
+        \label{fig:example2_1}
+    \end{minipage} \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{example3.pdf}
+        \caption{Example Figure 2}
+        \label{fig:example2_2}
+    \end{minipage}
+\end{figure}
+
+\section{Policy Recommendations or Conclusions}
+[Summarize findings or propose actionable recommendations. Replace this with content suitable for your document.]
+
+\newpage
+
+\section*{References}
+\begin{itemize}
+    \item Author Name or Organization (Year). \textit{Title of Reference}. Publisher or Source. Retrieved from \url{link}
+    \item Author Name or Organization (Year). \textit{Title of Reference}. Publisher or Source. Retrieved from \url{link}
+\end{itemize}
+
+\newpage
+
+\section*{Appendix}
+
+\subsection*{Additional Data or Analysis}
+[Include additional charts, graphs, or supplemental analysis here. Use appropriate formatting for clarity.]
+
+\end{document}
